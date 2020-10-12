@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/background.png) ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar{
+    height: 100%;
+}
+
+.header{
+    width: 100%;
+    min-height: 100px;
+}
+
+#navbarContainer{
+    width: 70% !important;
+}
+
+#navbarBrand{
+  width: 15%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+h1{
+    font-size: 30px !important;
+    margin-left: 17px;
+}
+
+a, p, li, input, button {
+    font-size: 22px !important;
+}
+
+#container{
+    width: 100%;
+    margin: 0 auto;
+    float: none; 
+}
+
+#coinsArea{
+    width: 70%;
+    margin: 60px auto;
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.card{
+    width: 23%;
+    height: fit-content;
+    float: left;
+    margin: 10px 10px; 
+    background-color: #ffffff80;
+}
+
+.coinSymbol{
+    font-size: x-large;
+}
+
+.coinName{
+padding: 2px;
+}
+
+.moreInfoBTN{
+    margin-top: 30px !important;
+    background-color: purple !important;
+    border-radius: 7px;
+   
+}
+
+.moreInfoBTN:hover{
+    background-color: purple !important;
+    opacity: 0.7;
+}
+
+.collapser{
+  margin-top: 15px;
+}
+
+.moreInfoText{
+  display: inline-block;
+  width: 70%;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.moreInfoImage{
+  padding-bottom: 5px;
+  width: 25%;
+  margin-top: 8px;
+}
+
+#searchBTN {
+  color: white;
+  border-color: white;
+}
+
+#searchBTN:hover{
+  background-color: purple;
+
+}
+
+.currencyImage{
+  width: 40%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.preloader{
+  float: none;
+  margin: 50px auto;
+  display: block;
+}
+
+#chartContainer {
+  height: 649px;
+  width: 100%;
+  border: solid 3px white;
+  margin: 0 auto;
+}
+
+#freeBritney {
+  width: 95%;
+  height: 502px;
+  margin: 30px auto;
+    float: none;
+    align-items: center;
+    display: flex;
+}
+
+.headline {
+  color: white;
+  text-align: center;
+  font-size: 110px !important;
+  text-shadow: 2px 2px 3px #00000085;
+
+}
+
+.aboutText {
+  color: white;
+  width: 70%;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+
+#britneyError {
+  width: 100%;
+  margin: 30px auto;
+  float: none;
+}
+
+#britneyError > .headline {
+  font-size: 43px !important;
+}
+
+/* Modal */
+.popUp{
+  width: 100%;
+  height: 100vh;
+  background-color:#00000070;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer{
+  width: 60vw;
+  height: auto;
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 21px;
+  padding-bottom: 20px;
+}
+
+.modalHeader{
+  display: block;
+  width:100%;
+  height: 50px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.modalBody{
+  width: 90%;
+  height: 331px;
+  margin: 60px auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  float: none;
+}
+
+.modalBody .card{
+  width: 90%;
+}
+
+.modalFooter{
+  width:100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modalFooter button {
+  margin-right: 20px;
+}
+
+
+
+/* Switch element CSS */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    width: 60px;
+    height: 34px;
+    float: right;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: purple;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px purple;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  /* End of Switch element */
+
+
+  .parallax {
+    background-image: url("images/hewan.jpg");
+  
+    width: 100%;
+    height: 1000px;
+    padding-top: 100px;
+
+  
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .coinsParallax {
+    background-image: url("images/coins.png");
+  
+    width: 100%;
+    height: 1000px;
+    padding-top: 100px;
+
+  
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  
+
+  @media screen and (max-width: 1500px) {
+    .card {
+      width: 45% ; 
+    }
+
+    #coinsArea{
+        width: 85%;
+    }
+    
+    #navbarBrand {
+      width: 20%;
+    }
+
+    .modalBody{
+      grid-template-columns: 1fr 1fr;
+      margin: 0 auto 88px auto;
+    }
+
+    .modalHeader{
+      height: auto;
+    }
+
+    .navbar-toggler {
+      float: right;
+    }
+
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100% ; 
+    }
+
+    #coinsArea{
+        width: 90%;
+    }
+
+    .modalBody{
+      grid-template-columns: 1fr;
+      overflow-y: auto;
+    }
+
+    
+
+  }
